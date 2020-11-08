@@ -30,22 +30,26 @@ func main() {
 		fmt.Println("Example: calc 12 * 78 = 936")
 		os.Exit(1)
 	}
+
 	firstnum, _ := strconv.Atoi(args[1])
 	operation := args[2]
 	secondnum, _ := strconv.Atoi(args[3])
 
 	switch {
-		case operation == "+":
-			add(firstnum, secondnum, &answer)
-		case operation == "-":
-			subtract(firstnum, secondnum, &answer)
-		case operation == "/":
-			divide(firstnum, secondnum, &answer)
-		case operation == "*":
-			multiply(firstnum, secondnum, &answer)
-	}
-	
+	case operation == "+":
+		add(firstnum, secondnum, &answer)
+	case operation == "-":
+		// pass location of answer so that the value can be changed
+		subtract(firstnum, secondnum, &answer)
+	case operation == "/":
+		divide(firstnum, secondnum, &answer)
+	case operation == "*":
+		multiply(firstnum, secondnum, &answer)
 
-	fmt.Println(answer )
+	default:
+		answer = 0
+	}
+
+	fmt.Println(answer)
 
 }

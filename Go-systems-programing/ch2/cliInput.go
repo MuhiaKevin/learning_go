@@ -8,16 +8,16 @@ import (
 
 func main() {
 	arguments := os.Args
-	minusI := false
+	iflag := false
 
 	for i := 0; i < len(arguments); i++ {
 		if strings.Compare(arguments[i], "-i") == 0 {
-			minusI = true
+			iflag = true
 			break
 		}
 	}
 
-	if minusI {
+	if iflag {
 		fmt.Println("Got the -i parameter !")
 		fmt.Print("y/n: ")
 		var answer string

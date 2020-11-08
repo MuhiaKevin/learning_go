@@ -17,11 +17,12 @@ func unNamedMinMax(x, y int) (int, int) {
 		return min, max
 	}
 }
+
 // set the function parameters and the data type of the return values
 
 func minmax(x, y int) (min, max int) {
 	if x > y {
-		min = y	
+		min = y
 		max = x
 		return min, max
 	} else {
@@ -33,5 +34,5 @@ func minmax(x, y int) (min, max int) {
 
 func main() {
 	// fmt.Println("Answer from unNamedMinmax()", unNamedMinMax(235, 110))
-	fmt.Println( minmax(235, 110))
+	fmt.Println(minmax(235, 110))
 }
