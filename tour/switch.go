@@ -2,20 +2,32 @@ package main
 
 import (
 	"fmt"
-	"time"
+	"runtime"
 )
 
+func showOperatingSystem() {
+	os := runtime.GOOS
+	switch os {
+	case "linux":
+		fmt.Println("Go is running on a linux maachine")
+	case "darwin":
+		fmt.Println("Go is running on a linux maachine")
+	// print windows and etc
+	default:
+		fmt.Printf("Go is running on %s \n", os)
+	}
+}
+
+func sayGoodBye() {
+	fmt.Printf("This function will run last \n")
+}
+func sayHello() {
+	fmt.Printf("Heey people \n")
+}
+
+// go uses a stack data structure to call  functions that have a defer keyword
 func main() {
-	// fmt.Print("Go runs on ")
-	// switch os := runtime.GOOS; os {
-	// case "darwin":
-	// 	fmt.Println("OS X.")
-	// case "linux":
-	// 	fmt.Println("Linux.")
-	// default:
-	// 	// freebsd, openbsd,
-	// 	// plan9, windows...
-	// 	fmt.Printf("%s.\n", os)
-	// }
-	fmt.Println(time.Now().Weekday() + 1)
+	defer sayHello()
+	defer sayGoodBye()
+	showOperatingSystem()
 }

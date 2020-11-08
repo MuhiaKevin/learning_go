@@ -6,10 +6,10 @@ import (
 )
 
 func Sqrt(x float64) float64 {
-	var z float64 = 1
+	var z float64 = 1.0
 	for i := z; i < x; i++ {
 		if z != math.Sqrt(x) {
-			fmt.Println(z)
+			// fmt.Println(z)
 			z -= (z*z - x) / (2 * z)
 		} else {
 			return z
@@ -21,5 +21,6 @@ func Sqrt(x float64) float64 {
 }
 
 func main() {
-	fmt.Println(Sqrt(16))
+	fmt.Println(Sqrt(9))
+
 }
