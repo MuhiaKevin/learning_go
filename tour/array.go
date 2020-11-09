@@ -67,6 +67,6 @@ func main() {
 
 	fmt.Printf("Array of  strings : %v \n", words)
 	fmt.Printf("Array of integers :  %v \n", primes)
-	fmt.Println(getXkcds())
+	fmt.Println(len(getXkcds()))
 
 }
