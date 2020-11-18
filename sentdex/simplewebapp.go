@@ -1,4 +1,4 @@
-// package main
+package main
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 )
 
 func index_handler(w http.ResponseWriter, r *http.Request) {
-
+	fmt.Println(*r)
 	fmt.Fprintf(w, "Woa go is neat")
 }
 

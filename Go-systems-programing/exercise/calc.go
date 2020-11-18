@@ -26,9 +26,9 @@ func main() {
 	var answer int
 
 	if len(args) != 4 {
-		fmt.Println("Usage: calc number operation number")
-		fmt.Println("Example: calc 12 * 78 = 936")
-		os.Exit(1)
+		fmt.Println("Usage: calc <number> <operation> <number>")
+		fmt.Println("Example: calc 12 * 78")
+		return
 	}
 
 	firstnum, _ := strconv.Atoi(args[1])
