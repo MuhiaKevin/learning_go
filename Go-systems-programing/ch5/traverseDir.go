@@ -7,13 +7,20 @@ import (
 )
 
 func walkFunction(path string, info os.FileInfo, err error) error {
-	_, err = os.Stat(path)
+	fileInfo, err := os.Stat(path)
 
 	if err != nil {
 		return err
 	}
 
-	fmt.Println(path)
+	// fmt.Println(path)
+
+	// show folders only
+	mode := fileInfo.Mode()
+
+	if mode.IsDir() {
+		fmt.Println(path)
+	}
 
 	return nil
 }
