@@ -21,3 +21,4 @@ https://michael.stapelberg.ch/posts/2017-08-19-golang_favorite/
 
 https://bognov.tech/introduction-to-golang-build-a-mini-twitter-clone
 https://bitfieldconsulting.com/golang
+https://avivcarmi.com/
