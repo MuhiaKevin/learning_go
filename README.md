@@ -72,3 +72,4 @@ Some code of me leaning Golang
 - https://codefibershq.com/blog/golang-why-nil-is-not-always-nil 
 - https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
 - https://github.com/uber-go/nilaway
+- https://www.reddit.com/r/golang/comments/18sncxt/go_nil_panic_and_the_billion_dollar_mistake/
