@@ -62,4 +62,13 @@ Some code of me leaning Golang
 - https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/
 - https://quii.gitbook.io/learn-go-with-tests/
 - https://checkmarx.gitbooks.io/go-scp/content/authentication-password-management/password-policies.html
-
+- https://medium.com/readytowork-org/integrating-stripe-payment-with-go-gin-gorm-mysql-and-react-259a52549e65
+- https://turso.tech/blog/something-you-probably-want-to-know-about-if-youre-using-sqlite-in-golang-72547ad625f1
+- https://medium.com/@pliutau
+- https://pliutau.com/ebiten-snake/
+- https://fasterthanli.me/articles/i-want-off-mr-golangs-wild-ride
+- https://grafana.com/blog/2024/02/09/how-i-write-http-services-in-go-after-13-years/
+- https://www.youtube.com/watch?v=64hJlefubII
+- https://codefibershq.com/blog/golang-why-nil-is-not-always-nil 
+- https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
+- https://github.com/uber-go/nilaway
