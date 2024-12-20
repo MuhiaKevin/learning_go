@@ -73,3 +73,4 @@ Some code of me leaning Golang
 - https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
 - https://github.com/uber-go/nilaway
 - https://www.reddit.com/r/golang/comments/18sncxt/go_nil_panic_and_the_billion_dollar_mistake/
+- https://jvns.ca/blog/2024/09/27/some-go-web-dev-notes/
